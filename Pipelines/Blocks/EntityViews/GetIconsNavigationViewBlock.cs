@@ -12,7 +12,7 @@ namespace Foundation.Commerce.BusinessTools.Engine.Pipelines.Blocks
 		{
 			Condition.Requires(entityView).IsNotNull($"{Name}: The argument cannot be null.");
 
-			foreach (var icon in Constants.Icons)
+			foreach (var icon in Constants.IconList)
 			{
 				var iconDashboardView = new EntityView()
 				{
